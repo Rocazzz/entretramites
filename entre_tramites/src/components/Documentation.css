@@ -1,0 +1,110 @@
+.documentation {
+  padding: 6rem 2rem;
+  background: var(--color-bg-section);
+}
+
+.documentation__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.documentation__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* Cards */
+.documentation__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.doc-card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  border: 1px solid var(--color-border);
+}
+
+.doc-card__badge {
+  display: inline-block;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  border-radius: var(--radius-sm);
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.doc-card__item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  align-items: flex-start;
+}
+
+.doc-card__check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.doc-card__text {
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Banner */
+.documentation__banner {
+  background: var(--color-dark);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.documentation__banner-title {
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.documentation__banner-body {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 480px;
+}
+
+.documentation__banner-cta {
+  flex-shrink: 0;
+  background: var(--color-primary);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 15px;
+  transition: background 0.2s;
+}
+.documentation__banner-cta:hover {
+  background: var(--color-primary-dark);
+}
