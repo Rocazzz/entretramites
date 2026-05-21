@@ -1,4 +1,4 @@
-import "./WhatIs.css";
+import "./Whatis.css";
 
 const CARDS = [
   {

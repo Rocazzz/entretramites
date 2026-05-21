@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./NavBar.css";
+import "./Navbar.css";
 
 const NAV_LINKS = [
   { label: "Qué es",        href: "que-es"        },
