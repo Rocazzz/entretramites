@@ -9,7 +9,7 @@ import Benefits      from "./components/Benefits";
 import Process       from "./components/Process";
 import Pricing       from "./components/Pricing";
 import Testimonials  from "./components/Testimonials";
-import FAQ           from "./components/FAQ";
+import FAQ           from "./components/Faq";
 import Contact       from "./components/Contact";
 import Footer        from "./components/Footer";
 
