@@ -1,6 +1,6 @@
 import "./index.css";
 
-import NavBar        from "./components/NavBar";
+import NavBar        from "./components/Navbar";
 import Hero          from "./components/Hero";
 import WhatIs        from "./components/Whatis";
 import Requirements  from "./components/Requirements";
