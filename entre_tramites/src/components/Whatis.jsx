@@ -20,7 +20,7 @@ const CARDS = [
 
 export default function WhatIs() {
   return (
-    <section id="qué-es" className="whatis">
+    <section id="que-es" className="whatis">
       <div className="whatis__inner">
 
         <div className="whatis__header">

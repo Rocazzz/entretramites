@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
 import "./NavBar.css";
 
-const NAV_LINKS = ["Qué es", "Requisitos", "Documentación", "Beneficios", "Proceso"];
+const NAV_LINKS = [
+  { label: "Qué es",        href: "que-es"        },
+  { label: "Requisitos",    href: "requisitos"     },
+  { label: "Documentación", href: "documentacion"  },
+  { label: "Beneficios",    href: "beneficios"     },
+  { label: "Proceso",       href: "proceso"        },
+];
 
 export default function NavBar() {
   const [scrolled, setScrolled] = useState(false);
@@ -22,13 +28,13 @@ export default function NavBar() {
         </a>
 
         <div className="navbar__links">
-          {NAV_LINKS.map((item) => (
+          {NAV_LINKS.map(({ label, href }) => (
             <a
-              key={item}
-              href={`#${item.toLowerCase().replace(" ", "")}`}
+              key={href}
+              href={`#${href}`}
               className="navbar__link"
             >
-              {item}
+              {label}
             </a>
           ))}
           <a href="#contacto" className="navbar__cta">

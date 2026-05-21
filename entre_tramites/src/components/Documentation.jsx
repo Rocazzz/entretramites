@@ -32,7 +32,7 @@ const DOCS = [
 
 export default function Documentation() {
   return (
-    <section id="documentación" className="documentation">
+    <section id="documentacion" className="documentation">
       <div className="documentation__inner">
 
         <div className="documentation__header">
