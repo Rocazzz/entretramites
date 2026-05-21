@@ -1,134 +1,58 @@
-.contact {
-  padding: 6rem 2rem;
-  background: var(--color-dark);
-}
+.contact { padding: 6rem 2rem; background: var(--color-primary); }
+.contact__inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
 
-.contact__inner {
-  max-width: 1100px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
+/* Info */
+.contact__eyebrow { color: var(--color-accent); font-weight: 700; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 1rem; }
+.contact__title { font-family: var(--font-display); font-size: clamp(1.9rem, 3vw, 2.5rem); font-weight: 900; color: #fff; margin-bottom: 1.25rem; line-height: 1.1; }
+.contact__subtitle { color: rgba(255,255,255,0.68); line-height: 1.7; margin-bottom: 2rem; font-size: 15px; }
 
-/* Info column */
-.contact__title {
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 3.5vw, 2.8rem);
-  font-weight: 800;
-  color: #fff;
-  margin-bottom: 1.5rem;
-  line-height: 1.1;
-}
+.contact__details { display: flex; flex-direction: column; gap: 14px; }
+.contact__detail  { display: flex; align-items: center; gap: 12px; }
+.contact__detail-icon { font-size: 1.1rem; }
+.contact__detail-desc  { color: rgba(255,255,255,0.45); font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+.contact__detail-label { color: #fff; font-weight: 600; font-size: 15px; }
 
-.contact__subtitle {
-  color: rgba(255, 255, 255, 0.6);
-  line-height: 1.7;
-  margin-bottom: 2rem;
-}
-
-.contact__details {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.contact__detail {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.contact__detail-icon { font-size: 1.25rem; }
-
-.contact__detail-desc {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 12px;
-}
-
-.contact__detail-label {
-  color: #fff;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-/* Form wrapper */
+/* Form */
 .contact__form-wrapper {
-  background: rgba(255, 255, 255, 0.06);
+  background: #fff;
   border-radius: var(--radius-xl);
   padding: 2.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-lg);
 }
 
-.contact__form-title {
-  color: #fff;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
-}
+.contact__form-title { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; color: var(--color-primary); margin-bottom: 1.5rem; }
 
-.contact__field {
-  margin-bottom: 1.25rem;
-}
-
-.contact__label {
-  display: block;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 13px;
-  margin-bottom: 6px;
-}
+.contact__field { margin-bottom: 1.1rem; }
+.contact__label { display: block; color: var(--color-text-muted); font-size: 13px; font-weight: 500; margin-bottom: 5px; }
 
 .contact__input,
 .contact__textarea {
-  width: 100%;
-  padding: 12px 16px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #fff;
-  font-size: 15px;
+  width: 100%; padding: 11px 14px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--color-border);
+  color: var(--color-text);
+  font-size: 14px;
   font-family: var(--font-body);
   outline: none;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: var(--color-bg-section);
 }
-
-.contact__input::placeholder,
-.contact__textarea::placeholder {
-  color: rgba(255, 255, 255, 0.3);
-}
-
 .contact__input:focus,
 .contact__textarea:focus {
-  border-color: rgba(232, 71, 43, 0.6);
+  border-color: var(--color-primary-mid);
+  box-shadow: 0 0 0 3px rgba(29,76,59,0.1);
+  background: #fff;
 }
-
-.contact__textarea {
-  resize: vertical;
-}
+.contact__textarea { resize: vertical; }
 
 .contact__submit {
-  width: 100%;
-  background: var(--color-primary);
-  color: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  border: none;
-  font-weight: 700;
-  font-size: 16px;
-  font-family: var(--font-body);
-  cursor: pointer;
-  transition: background 0.2s;
-  margin-top: 0.25rem;
+  width: 100%; background: var(--color-primary); color: #fff;
+  padding: 14px; border-radius: var(--radius-full);
+  border: none; font-weight: 700; font-size: 15px;
+  font-family: var(--font-body); cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+  margin-top: 0.5rem;
 }
+.contact__submit:hover { background: var(--color-primary-mid); transform: translateY(-1px); }
 
-.contact__submit:hover {
-  background: var(--color-primary-dark);
-}
-
-.contact__disclaimer {
-  color: rgba(255, 255, 255, 0.35);
-  font-size: 12px;
-  text-align: center;
-  margin-top: 1rem;
-}
+.contact__disclaimer { color: var(--color-text-light); font-size: 12px; text-align: center; margin-top: 1rem; }
