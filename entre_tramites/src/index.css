@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+/* ── Reset & base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--color-text);
+  background: var(--color-white);
+}
+
+/* ── CSS variables ── */
+:root {
+  --color-primary:       #E8472B;
+  --color-primary-dark:  #c73820;
+  --color-primary-light: #fdf0ed;
+  --color-dark:          #1A1A2E;
+  --color-dark-alt:      #16213E;
+  --color-text:          #2d2d2d;
+  --color-text-muted:    #666666;
+  --color-border:        #e8e8e8;
+  --color-white:         #ffffff;
+  --color-bg-light:      #f9f8f6;
+  --color-bg-section:    #F5F3EF;
+
+  --font-display: 'Playfair Display', serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  --radius-sm:  8px;
+  --radius-md:  12px;
+  --radius-lg:  16px;
+  --radius-xl:  20px;
+  --radius-full: 9999px;
+}
+
+/* ── Shared animations ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.animate-fade-up { animation: fadeUp 0.8s ease forwards; }
+.animate-fade-in { animation: fadeIn 1.2s ease forwards; }
