@@ -2,7 +2,7 @@ import "./index.css";
 
 import NavBar        from "./components/NavBar";
 import Hero          from "./components/Hero";
-import WhatIs        from "./components/WhatIs";
+import WhatIs        from "./components/Whatis";
 import Requirements  from "./components/Requirements";
 import Documentation from "./components/Documentation";
 import Benefits      from "./components/Benefits";
