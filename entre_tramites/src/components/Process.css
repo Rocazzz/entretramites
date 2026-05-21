@@ -1,59 +1,28 @@
-.process { padding: 6rem 2rem; background: var(--color-white); }
+.process { padding: 5rem 2rem; background: var(--color-white); }
 .process__inner { max-width: 860px; margin: 0 auto; }
-.process__header { text-align: center; margin-bottom: 3.5rem; }
+.process__header { text-align: center; margin-bottom: 3rem; }
 
-.process__steps {}
-
-.process__step {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 0;
-  align-items: flex-start;
-}
-
-.process__step-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-shrink: 0;
-}
+.process__step { display: flex; gap: 1.5rem; align-items: flex-start; }
+.process__step-left { display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
 
 .process__circle {
-  width: 52px; height: 52px;
-  border-radius: 50%;
+  width: 50px; height: 50px; border-radius: 50%;
   background: var(--color-bg-section);
   border: 2px solid var(--color-border);
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-display);
-  font-weight: 900;
-  font-size: 1.1rem;
-  color: var(--color-text-muted);
-  position: relative;
-  z-index: 1;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  font-weight: 800; font-size: 1.1rem; color: var(--color-text-muted);
+  transition: all 0.2s;
 }
-
 .process__circle--active {
   background: var(--color-primary);
   border-color: var(--color-primary);
   color: #fff;
-  box-shadow: 0 4px 14px rgba(29,76,59,0.25);
+  box-shadow: 0 4px 14px rgba(27,48,102,0.25);
 }
 
-.process__line {
-  width: 2px;
-  flex: 1;
-  min-height: 40px;
-  background: var(--color-border);
-  margin: 4px 0;
-}
+.process__line { width: 2px; flex: 1; min-height: 40px; background: var(--color-border); margin: 4px 0; }
 
-.process__step-content {
-  flex: 1;
-  padding: 12px 0 2.5rem;
-}
-
-.process__step-title { font-weight: 700; font-size: 1.05rem; color: var(--color-primary); margin-bottom: 6px; }
-.process__step-desc  { color: var(--color-text-muted); font-size: 14px; line-height: 1.7; }
-
+.process__step-content { flex: 1; padding: 10px 0 2.5rem; }
 .process__step:last-child .process__step-content { padding-bottom: 0; }
+.process__step-title { font-weight: 700; font-size: 1rem; color: var(--color-primary); margin-bottom: 5px; }
+.process__step-desc  { color: var(--color-text-muted); font-size: 13.5px; line-height: 1.7; }

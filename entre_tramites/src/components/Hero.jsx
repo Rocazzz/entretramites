@@ -1,65 +1,45 @@
 import "./Hero.css";
 
-const STATS = [
-  ["+500", "emprendedores\nasesorados"],
-  ["98%",  "tasa de\naprobación"],
-  ["100%", "proceso\nonline"],
-];
-
 const CHECKLIST = [
-  "Eres ciudadano no comunitario",
+  "Eres ciudadano de un país no comunitario",
   "Tienes un proyecto innovador o startup",
   "Quieres residir legalmente en España",
-  "Tu negocio tiene un plan viable",
+  "Tu negocio tiene un plan de negocio viable",
 ];
 
 const TRUST = [
-  { icon: "⭐", text: "4.5/5 valoración media en Google" },
-  { icon: "🔒", text: "Proceso 100% online y seguro" },
-  { icon: "🇪🇸", text: "Especialistas en derecho español" },
-  { icon: "💬", text: "Atención personalizada en español" },
+  { icon: "✅", title: "Sin estrés", desc: "Todo es 100% online, sin necesidad de salir de casa" },
+  { icon: "🧩", title: "Integral",   desc: "Inmigración, asuntos legales o impuestos — lo hacemos" },
+  { icon: "👤", title: "Personalizado", desc: "Tendrás un especialista dedicado, guiándote paso a paso" },
+  { icon: "💰", title: "Sin costos ocultos", desc: "Paga solo por los servicios que necesitas" },
 ];
 
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="hero__inner">
+      <div className="hero__dots-tr" />
+      <div className="hero__dots-bl" />
 
+      <div className="hero__inner">
         {/* Left */}
         <div className="animate-fade-up">
-          <div className="hero__tag">
-            <span className="hero__tag-dot" />
-            Ley 14/2013 de Emprendedores
-          </div>
-
           <h1 className="hero__title">
-            Visa de{" "}
-            <span className="hero__title-accent">Emprendedor</span>
-            <br />en España
+            Obtén tu <strong>Visa de Emprendedor</strong> en España
           </h1>
-
           <p className="hero__subtitle">
-            Convierte tu idea de negocio en una residencia legal en España.
-            Nuestros especialistas gestionan todo el proceso por ti, de forma
-            100% online y sin sorpresas.
+            Gestionamos tu residencia para emprendedores de principio a fin.
+            Asesoría 100% online, sin burocracia y con especialistas dedicados a tu caso.
           </p>
-
           <div className="hero__actions">
-            <a href="#contacto" className="hero__btn hero__btn--primary">
-              Consulta gratis →
-            </a>
-            <a href="#que-es" className="hero__btn hero__btn--outline">
-              Saber más
-            </a>
+            <a href="#contacto" className="hero__btn-primary">🟢 Consulta gratis</a>
+            <a href="#que-es"   className="hero__btn-outline">Saber más</a>
           </div>
-
-          <div className="hero__stats">
-            {STATS.map(([n, l]) => (
-              <div key={n}>
-                <span className="hero__stat-number">{n}</span>
-                <span className="hero__stat-label">{l}</span>
-              </div>
-            ))}
+          <div className="hero__rating">
+            <div className="hero__rating-score">
+              <span className="hero__stars">★★★★★</span>
+              4.5
+            </div>
+            <span className="hero__rating-text">Valorado con 4.5 de 5 · +500 reseñas</span>
           </div>
         </div>
 
@@ -73,22 +53,24 @@ export default function Hero() {
                 <span className="hero__check-text">{item}</span>
               </div>
             ))}
-            <a href="#contacto" className="hero__card-cta">
-              Evalúa tu caso gratis
-            </a>
+            <a href="#contacto" className="hero__card-cta">Evalúa tu caso gratis</a>
           </div>
         </div>
-
       </div>
 
-      {/* Trust bar */}
-      <div className="hero__trust">
-        {TRUST.map(({ icon, text }) => (
-          <div key={text} className="hero__trust-item">
-            <div className="hero__trust-icon">{icon}</div>
-            <span>{text}</span>
-          </div>
-        ))}
+      {/* Trust bar — fondo blanco, borde verde arriba */}
+      <div className="hero__trust-bar">
+        <div className="hero__trust-bar-inner">
+          {TRUST.map(({ icon, title, desc }) => (
+            <div key={title} className="hero__trust-item">
+              <div className="hero__trust-icon">{icon}</div>
+              <div>
+                <p className="hero__trust-title">{title}</p>
+                <p className="hero__trust-desc">{desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
