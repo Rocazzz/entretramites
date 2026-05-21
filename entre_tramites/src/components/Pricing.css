@@ -25,3 +25,37 @@
 .pricing-card__cta--filled:hover  { background: var(--color-cta-hover); }
 .pricing-card__cta--outline { border: 2px solid var(--color-primary); color: var(--color-primary); }
 .pricing-card__cta--outline:hover { background: var(--color-primary); color: #fff; }
+
+/* =========================
+   RESPONSIVE — PRICING
+========================= */
+
+@media (max-width: 980px) {
+  .pricing {
+    padding: 4rem 2rem;
+  }
+
+  .pricing__grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .pricing {
+    padding: 3rem 1.25rem;
+  }
+
+  .pricing__grid {
+    max-width: 100%;
+  }
+
+  .pricing-card__body {
+    padding: 1.5rem;
+  }
+
+  .pricing-card__price {
+    font-size: 2rem;
+  }
+}

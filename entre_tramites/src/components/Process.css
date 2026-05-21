@@ -26,3 +26,41 @@
 .process__step:last-child .process__step-content { padding-bottom: 0; }
 .process__step-title { font-weight: 700; font-size: 1rem; color: var(--color-primary); margin-bottom: 5px; }
 .process__step-desc  { color: var(--color-text-muted); font-size: 13.5px; line-height: 1.7; }
+
+/* =========================
+   RESPONSIVE — PROCESS
+========================= */
+
+@media (max-width: 980px) {
+  .process {
+    padding: 4rem 2rem;
+  }
+
+  .process__inner {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .process {
+    padding: 3rem 1.25rem;
+  }
+
+  .process__step {
+    gap: 1rem;
+  }
+
+  .process__circle {
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+  }
+
+  .process__step-title {
+    font-size: 0.95rem;
+  }
+
+  .process__step-content {
+    padding-bottom: 2rem;
+  }
+}
