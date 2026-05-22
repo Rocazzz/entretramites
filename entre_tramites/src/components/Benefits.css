@@ -23,9 +23,7 @@
 .benefit-card__title { font-weight: 700; font-size: 14.5px; color: var(--color-primary); margin-bottom: 4px; }
 .benefit-card__desc  { color: var(--color-text-muted); font-size: 13px; line-height: 1.65; }
 
-/* =========================
-   RESPONSIVE — BENEFITS
-========================= */
+/*responsive*/
 
 @media (max-width: 980px) {
   .benefits {

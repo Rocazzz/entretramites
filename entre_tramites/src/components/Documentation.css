@@ -49,9 +49,7 @@
 }
 .documentation__banner-cta:hover { background: var(--color-cta-hover); }
 
-/* =========================
-   RESPONSIVE — DOCUMENTATION
-========================= */
+/*responsive*/
 
 @media (max-width: 980px) {
   .documentation {

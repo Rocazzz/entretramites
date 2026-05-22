@@ -45,9 +45,8 @@ const COLS = [
 export default function Footer() {
   return (
     <>
-      {/* Botón flotante WhatsApp */}
       <a
-        href="https://wa.me/34600000000"
+        href="https://wa.me/3167176644"
         target="_blank"
         rel="noopener noreferrer"
         className="footer__cta-float"
@@ -60,7 +59,6 @@ export default function Footer() {
 
           <div className="footer__top">
 
-            {/* Brand column */}
             <div>
 
               <a href="#" className="footer__brand">
@@ -97,7 +95,6 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Link columns */}
             {COLS.map(({ title, links }) => (
               <div key={title}>
 
@@ -122,7 +119,6 @@ export default function Footer() {
 
           </div>
 
-          {/* Bottom */}
           <div className="footer__bottom">
 
             <p className="footer__copy">

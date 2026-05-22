@@ -16,14 +16,6 @@ import Footer        from "./components/Footer";
 export default function App() {
   return (
     <>
-      {/*
-        SEO Meta Tags – add these inside <head> in index.html:
-        <title>Visa de Emprendedor en España | Entre Trámites</title>
-        <meta name="description" content="Obtén tu visado de emprendedor en España con Entre Trámites. Asesoría 100% online, gestión completa del expediente y seguimiento hasta la aprobación. Ley 14/2013." />
-        <meta name="keywords"    content="visa emprendedor España, visado emprendedor, residencia emprendedor España, Ley 14/2013, gestoría extranjería España, Entre Trámites" />
-        <link rel="canonical"    href="https://entretramites.com/extranjeria/visa-emprendedor" />
-      */}
-
       <NavBar />
 
       <main>

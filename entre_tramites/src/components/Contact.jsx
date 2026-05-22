@@ -5,7 +5,7 @@ const CONTACT_INFO = [
   { icon: <FaPhoneAlt />,  label: "930 185 237",           desc: "Llámanos"   },
   { icon: <FaWhatsapp />,  label: "WhatsApp disponible",   desc: "Escríbenos" },
   { icon: <FaGlobe />,     label: "entretramites.com",     desc: "Web"        },
-  { icon: <FaEnvelope />,  label: "hola@entretramites.com",desc: "Email"      },
+  { icon: <FaEnvelope />,  label: "info@entretramites.com",desc: "Email"      },
 ];
 
 const FIELDS = [

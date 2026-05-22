@@ -11,7 +11,6 @@
   align-items: start;
 }
 
-/* Info izquierda */
 .contact__info-list { display: flex; flex-direction: column; gap: 1.25rem; margin-top: 1.5rem; }
 .contact__info-item {
   display: flex; align-items: center; gap: 14px;
@@ -25,7 +24,6 @@
 .contact__info-desc  { color: var(--color-text-light); font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
 .contact__info-label { color: var(--color-primary); font-weight: 700; font-size: 14px; }
 
-/* Formulario — card blanca */
 .contact__form-wrapper {
   background: #fff;
   border-radius: var(--radius-xl);
@@ -58,7 +56,6 @@
 }
 .contact__textarea { resize: vertical; }
 
-/* Botón verde CTA */
 .contact__submit {
   width: 100%; background: var(--color-cta); color: #fff;
   padding: 14px; border-radius: var(--radius-full);
@@ -71,9 +68,7 @@
 .contact__submit:hover { background: var(--color-cta-hover); transform: translateY(-1px); }
 .contact__disclaimer { color: var(--color-text-light); font-size: 11.5px; text-align: center; margin-top: 1rem; }
 
-/* =========================
-   RESPONSIVE — CONTACT
-========================= */
+/*responsive*/
 
 @media (max-width: 980px) {
   .contact {

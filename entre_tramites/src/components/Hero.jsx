@@ -54,7 +54,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right card */}
         <div className="animate-fade-in">
           <div className="hero__card">
             <p className="hero__card-title">¿Puedes solicitar esta visa?</p>
@@ -69,7 +68,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Trust bar */}
       <div className="hero__trust-bar">
         <div className="hero__trust-bar-inner">
           {TRUST.map(({ icon, title, desc }) => (

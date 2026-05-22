@@ -45,9 +45,7 @@
 }
 .whatis__banner-cta:hover { background: var(--color-cta-hover); }
 
-/* =========================
-   RESPONSIVE — WHATIS
-========================= */
+/*responsive*/
 
 @media (max-width: 980px) {
   .whatis {

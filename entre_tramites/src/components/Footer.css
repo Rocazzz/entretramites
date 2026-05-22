@@ -1,7 +1,3 @@
-/* =========================
-   FOOTER
-========================= */
-
 .footer {
   background: var(--color-primary);
   padding: 4rem 2rem 2rem;
@@ -11,10 +7,6 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-
-/* =========================
-   TOP SECTION
-========================= */
 
 .footer__top {
   display: grid;
@@ -26,10 +18,6 @@
 
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
-
-/* =========================
-   BRAND COLUMN
-========================= */
 
 .footer__brand {
   display: inline-flex;
@@ -59,10 +47,6 @@
 
   max-width: 260px;
 }
-
-/* =========================
-   SOCIAL ICONS
-========================= */
 
 .footer__social {
   display: flex;
@@ -96,10 +80,6 @@
   transform: translateY(-2px);
 }
 
-/* =========================
-   LINK COLUMNS
-========================= */
-
 .footer__col-title {
   color: #fff;
 
@@ -132,10 +112,6 @@
 .footer__col-link:hover {
   color: var(--color-cta);
 }
-
-/* =========================
-   BOTTOM BAR
-========================= */
 
 .footer__bottom {
   display: flex;
@@ -174,10 +150,6 @@
   color: var(--color-cta);
 }
 
-/* =========================
-   WHATSAPP FLOAT BUTTON
-========================= */
-
 .footer__cta-float {
   position: fixed;
 
@@ -214,9 +186,7 @@
   background: #20ba5a;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/*responsive*/
 
 @media (max-width: 950px) {
 
