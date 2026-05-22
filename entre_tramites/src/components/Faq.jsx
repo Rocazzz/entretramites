@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa";
-import "./FAQ.css";
+import "./Faq.css";
 
 const FAQS = [
   { q: "¿Cuánto tarda el proceso de aprobación?",           a: "El visado de emprendedor suele resolverse entre 10 y 20 días hábiles desde la presentación del expediente completo. La autorización de residencia puede tardar hasta 20 días hábiles adicionales." },

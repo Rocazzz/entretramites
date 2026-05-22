@@ -1,5 +1,5 @@
 import { FaRocket, FaHome, FaUsers, FaLightbulb } from "react-icons/fa";
-import "./WhatIs.css";
+import "./Whatis.css";
 
 const CARDS = [
   { icon: <FaRocket />, title: "Visado inicial — 1 año", desc: "Permite entrar a España para preparar el lanzamiento de tu actividad. Ideal si estás fuera del país y quieres tramitarlo desde tu consulado." },
