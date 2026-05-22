@@ -1,3 +1,4 @@
+import { FaCheck } from "react-icons/fa";
 import "./Pricing.css";
 
 const PLANS = [
@@ -38,7 +39,7 @@ export default function Pricing() {
                 <ul className="pricing-card__features">
                   {features.map((f, i) => (
                     <li key={i} className="pricing-card__feature">
-                      <span className="pricing-card__check">✓</span>{f}
+                      <span className="pricing-card__check"><FaCheck /></span>{f}
                     </li>
                   ))}
                 </ul>

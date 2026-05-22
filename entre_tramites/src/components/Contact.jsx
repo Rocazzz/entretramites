@@ -1,10 +1,11 @@
+import { FaPhoneAlt, FaWhatsapp, FaGlobe, FaEnvelope } from "react-icons/fa";
 import "./Contact.css";
 
 const CONTACT_INFO = [
-  { icon: "📞", label: "930 185 237",             desc: "Llámanos"   },
-  { icon: "💬", label: "WhatsApp disponible",      desc: "Escríbenos" },
-  { icon: "🌐", label: "entretramites.com",        desc: "Web"        },
-  { icon: "📧", label: "info@entretramites.com",   desc: "Email"      },
+  { icon: <FaPhoneAlt />,  label: "930 185 237",           desc: "Llámanos"   },
+  { icon: <FaWhatsapp />,  label: "WhatsApp disponible",   desc: "Escríbenos" },
+  { icon: <FaGlobe />,     label: "entretramites.com",     desc: "Web"        },
+  { icon: <FaEnvelope />,  label: "hola@entretramites.com",desc: "Email"      },
 ];
 
 const FIELDS = [
@@ -27,7 +28,6 @@ export default function Contact() {
         </div>
 
         <div className="contact__grid">
-          {/* Info */}
           <div>
             <p className="section-subtitle">Estamos para ayudarte en cada paso del proceso.</p>
             <div className="contact__info-list">
@@ -43,7 +43,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Formulario */}
           <div className="contact__form-wrapper">
             <h3 className="contact__form-title">Agenda tu consulta gratuita</h3>
             {FIELDS.map(({ label, type, placeholder }) => (

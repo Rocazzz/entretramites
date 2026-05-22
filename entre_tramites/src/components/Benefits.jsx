@@ -1,12 +1,20 @@
+import {
+  FaGlobe,
+  FaBolt,
+  FaBriefcase,
+  FaUsers,
+  FaDesktop,
+  FaChartLine,
+} from "react-icons/fa";
 import "./Benefits.css";
 
 const BENEFITS = [
-  { icon: "🌍", title: "Área Schengen completa",     desc: "Muévete libremente por los 27 países del espacio Schengen con un solo permiso de residencia." },
-  { icon: "⚡", title: "Sin inversión mínima",       desc: "A diferencia de la Golden Visa, no se exige capital mínimo. Lo que importa es la innovación." },
-  { icon: "💼", title: "Permiso de trabajo incluido", desc: "Trabaja legalmente en España sin tramitar ningún visado de trabajo adicional." },
-  { icon: "👨‍👩‍👧", title: "Reagrupación familiar",    desc: "Cónyuge e hijos menores de 18 años pueden incluirse en la solicitud desde el primer momento." },
-  { icon: "🖥️", title: "Sin desplazamiento",        desc: "Designa a Entre Trámites como representante y tramita tu visa sin salir de tu país." },
-  { icon: "📈", title: "Ventajas fiscales",          desc: "Acceso al IS al 15% para startups y al régimen de la Ley Beckham en determinados casos." },
+  { icon: <FaGlobe />,     title: "Área Schengen completa",      desc: "Muévete libremente por los 27 países del espacio Schengen con un solo permiso de residencia." },
+  { icon: <FaBolt />,      title: "Sin inversión mínima",        desc: "A diferencia de la Golden Visa, no se exige capital mínimo. Lo que importa es la innovación." },
+  { icon: <FaBriefcase />, title: "Permiso de trabajo incluido", desc: "Trabaja legalmente en España sin tramitar ningún visado de trabajo adicional." },
+  { icon: <FaUsers />,     title: "Reagrupación familiar",       desc: "Cónyuge e hijos menores de 18 años pueden incluirse en la solicitud desde el primer momento." },
+  { icon: <FaDesktop />,   title: "Sin desplazamiento",          desc: "Designa a Entre Trámites como representante y tramita tu visa sin salir de tu país." },
+  { icon: <FaChartLine />, title: "Ventajas fiscales",           desc: "Acceso al IS al 15% para startups y al régimen de la Ley Beckham en determinados casos." },
 ];
 
 export default function Benefits() {

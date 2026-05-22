@@ -1,9 +1,10 @@
+import { FaCheck } from "react-icons/fa";
 import "./Requirements.css";
 
 const REQUIREMENTS = [
-  { n: "01", title: "Perfil personal", items: ["Ciudadano de país no comunitario", "Sin antecedentes penales en España ni país de residencia previa", "No encontrarse en período de prohibición de entrada a España"] },
-  { n: "02", title: "El proyecto",     items: ["Actividad innovadora con interés económico para España", "Plan de negocio detallado y viable", "Formación o experiencia profesional acorde al proyecto"] },
-  { n: "03", title: "Medios económicos", items: ["Recursos suficientes para subsistir durante la estancia", "Seguro médico público o privado con cobertura en España", "En su caso, medios para familiares a cargo"] },
+  { n: "01", title: "Perfil personal",     items: ["Ciudadano de país no comunitario", "Sin antecedentes penales en España ni país de residencia previa", "No encontrarse en período de prohibición de entrada a España"] },
+  { n: "02", title: "El proyecto",         items: ["Actividad innovadora con interés económico para España", "Plan de negocio detallado y viable", "Formación o experiencia profesional acorde al proyecto"] },
+  { n: "03", title: "Medios económicos",   items: ["Recursos suficientes para subsistir durante la estancia", "Seguro médico público o privado con cobertura en España", "En su caso, medios para familiares a cargo"] },
 ];
 
 export default function Requirements() {
@@ -24,7 +25,7 @@ export default function Requirements() {
               <div className="req-card__body">
                 {items.map((item, i) => (
                   <div key={i} className="req-card__item">
-                    <span className="req-card__bullet">✓</span>
+                    <span className="req-card__bullet"><FaCheck /></span>
                     <span className="req-card__text">{item}</span>
                   </div>
                 ))}

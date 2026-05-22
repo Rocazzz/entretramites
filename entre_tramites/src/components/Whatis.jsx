@@ -1,16 +1,16 @@
-import "./Whatis.css";
+import { FaRocket, FaHome, FaUsers, FaLightbulb } from "react-icons/fa";
+import "./WhatIs.css";
 
 const CARDS = [
-  { icon: "🚀", title: "Visado inicial — 1 año", desc: "Permite entrar a España para preparar el lanzamiento de tu actividad. Ideal si estás fuera del país y quieres tramitarlo desde tu consulado." },
-  { icon: "🏠", title: "Autorización de residencia — 3 años", desc: "Si ya estás en España, puedes solicitar directamente la autorización de residencia para emprendedores, renovable y válida en todo el territorio nacional." },
-  { icon: "👨‍👩‍👧", title: "Extensión familiar", desc: "Tu cónyuge e hijos menores de 18 años pueden solicitar el permiso de forma conjunta o en un momento posterior, sin coste adicional de gestión." },
+  { icon: <FaRocket />, title: "Visado inicial — 1 año", desc: "Permite entrar a España para preparar el lanzamiento de tu actividad. Ideal si estás fuera del país y quieres tramitarlo desde tu consulado." },
+  { icon: <FaHome />,   title: "Autorización de residencia — 3 años", desc: "Si ya estás en España, puedes solicitar directamente la autorización de residencia para emprendedores, renovable y válida en todo el territorio nacional." },
+  { icon: <FaUsers />,  title: "Extensión familiar", desc: "Tu cónyuge e hijos menores de 18 años pueden solicitar el permiso de forma conjunta o en un momento posterior, sin coste adicional de gestión." },
 ];
 
 export default function WhatIs() {
   return (
     <section id="que-es" className="whatis">
       <div className="whatis__inner">
-
         <div className="whatis__header">
           <span className="section-eyebrow">¿Qué es?</span>
           <h2 className="section-title">La visa para emprendedores en España</h2>
@@ -32,7 +32,7 @@ export default function WhatIs() {
         </div>
 
         <div className="whatis__banner">
-          <div className="whatis__banner-icon">💡</div>
+          <div className="whatis__banner-icon"><FaLightbulb /></div>
           <div className="whatis__banner-content">
             <div className="whatis__banner-label">Dato importante</div>
             <p className="whatis__banner-text">
@@ -42,7 +42,6 @@ export default function WhatIs() {
           </div>
           <a href="#contacto" className="whatis__banner-cta">Evalúa tu caso →</a>
         </div>
-
       </div>
     </section>
   );
